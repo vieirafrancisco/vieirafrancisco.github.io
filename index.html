@@ -9,7 +9,11 @@
             font-family: Arial, sans-serif;
             line-height: 1.3;
             color: #000;
-            font-size: 11pt;
+            font-size: 10pt;
+
+            max-width: 800px;
+            width: 100%;
+            margin: 0 auto;
         }
 
         .header {
@@ -17,7 +21,7 @@
         }
 
         .name {
-            font-size: 22pt;
+            font-size: 18pt;
             font-weight: bold;
             margin-bottom: 5px;
         }
@@ -58,14 +62,19 @@
 
         .summary {
             text-align: justify;
+            margin-top: 0;
+            padding-top: 0;
             margin-bottom: 15px;
         }
 
         .experience-header {
             display: flex;
             justify-content: space-between;
-            font-weight: bold;
             margin-top: 10px;
+        }
+
+        .experience-header span:not(:last-child) {
+            font-weight: bold;
         }
 
         .job-title {
@@ -96,6 +105,10 @@
 
         .degree {
             font-style: italic;
+        }
+
+        .education {
+            padding-left: 20px;
         }
     </style>
 </head>
@@ -138,10 +151,12 @@
             <span>Jan 2023 - Present</span>
         </div>
         <div class="job-title">Software Engineer</div>
-        <ul>
-            <li>Executed performance improvements on the file upload page <strong>measured by a 2x faster processing speed</strong> using parallel calls to an external AI service.</li>
-            <li>Contributed to the proposal replication feature <strong>measured by over 90% reduction in operational time</strong> using logic to select and merge proposals.</li>
-            <li>Orchestrated validation locks prior to contract signature <strong>measured by 4+ critical fields safeguarded</strong> using direct data verification against existing contract information.</li>
+        <ul class="achievements-list">
+            <ul>
+                <li>Executed performance improvements on the file upload page <strong>measured by a 2x faster processing speed</strong> using parallel calls to an external AI service.</li>
+                <li>Contributed to the proposal replication feature <strong>measured by over 90% reduction in operational time</strong> using logic to select and merge proposals.</li>
+                <li>Orchestrated validation locks prior to contract signature <strong>measured by 4+ critical fields safeguarded</strong> using direct data verification against existing contract information.</li>
+            </ul>
             <li><strong>Context:</strong> At Volpi.tech, a fintech specializing in real estate financing, I worked as a Software Engineer automating key processes. I was part of a squad dedicated to contract generation, developing microservices with Python and Flask while actively contributing to team tasks and collaboration. I developed a microservice for the Credit Information System (SCR), contributing to system modularization and scalability, implemented critical alerts in the internal system prior to contract generation, reducing errors and improving data reliability, integrated the system with Slack, enhancing communication and streamlining internal workflows and contributed to exploratory studies for a calculation engine to centralize financial rules and improve payment flows.</li>
         </ul>
     </div>
@@ -152,22 +167,25 @@
             <span>Jul 2021 - Jan 2023</span>
         </div>
         <div class="job-title">Junior Software Engineer</div>
-        <ul>
-            <li>Facilitated lead acquisition <strong>measured by 2x increased chances of retaining lead data</strong> using real-time alerts through Slack integration.</li>
-            <li>Enabled leadership autonomy in creating simulators <strong>measured by a 99% reduction in developer dependency</strong> using a React-based whitelabel page.</li>
+        <ul class="achievements-list">
+            <ul>
+                <li>Facilitated lead acquisition <strong>measured by 2x increased chances of retaining lead data</strong> using real-time alerts through Slack integration.</li>
+                <li>Enabled leadership autonomy in creating simulators <strong>measured by a 99% reduction in developer dependency</strong> using a React-based whitelabel page.</li>
+            </ul>
             <li><strong>Context:</strong> I worked on a project to develop a real estate financing simulator, customized to meet the company's specific conditions. The goal was to eliminate spreadsheet usage by integrating the simulator into the company's website using React and internal platform using Python/Django. This drastically reduced simulation creation time and empowered clients to generate their own simulations. I automated the generation of financial simulations, improving efficiency and reducing manual effort, developed APIs for custom simulators for partner real estate developers, created an interface for viewing the full simulation payment flow and implemented endpoints to save simulation data and notify the sales team via Slack.</li>
         </ul>
     </div>
 
     <h2>Education</h2>
-    <div class="education-item">
-        <strong>Universidade Federal de Alagoas</strong>
-        <span>Bachelor's degree</span>
+    <div class="education">
+        <div class="education-item">
+            <strong>Universidade Federal de Alagoas</strong>
+            <span>Bachelor's degree</span>
+        </div>
+        <div class="education-item">
+            <span class="degree">Computer Science</span>
+            <span>Jul 2017 - Jan 2022</span>
+        </div>
     </div>
-    <div class="education-item">
-        <span class="degree">Computer Science</span>
-        <span>Jul 2017 - Jan 2022</span>
-    </div>
-
 </body>
 </html>
